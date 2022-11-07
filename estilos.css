@@ -1,0 +1,64 @@
+body{ 
+
+    margin: 0;
+    background-color: black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1800px;
+    background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71));
+    column-gap: 10px;
+    row-gap: 20px;
+    border-style: solid;
+
+
+}
+
+
+
+.paginas{
+    display: grid;
+    grid-template-columns: 200px 200px  200px  200px  200px  ;
+    grid-template-rows: auto ;
+    background: linear-gradient(to right,rgb(32, 24, 24),rgb(75, 71, 71));
+    margin-left:10px;
+    column-gap: 100px;
+    row-gap: 30px;
+    border-style: solid;
+}
+
+.paginas .box{ margin-top: 20px; border-style: solid; height: 270px; margin-left: 30px; background-color:yellow;}
+.paginas .box a{   text-decoration: none; color: black;}
+
+.box img:hover{ flex: 10%; width: 280px; transition: all 600ms;}
+.marquesin1{margin-left: 10px; background-color: yellow; width: 50%; height: 100px; text-transform: uppercase; white-space: nowrap; overflow: hidden; border-style: solid; }
+
+.marquesin1 div{ font-size: 6rem; animation: animado1 20s linear infinite;  }
+
+@keyframes animado1{
+    25%{ 
+        transform: translate(-300px);
+    }
+    50%{ 
+        transform: translate(-600px);
+    }
+    70%{ 
+        transform: translate(100px);
+    }
+}
+
+
+@media screen and ( max-width: 768px){
+
+    .grid{
+        display: grid;
+        grid-template-columns: 500px;
+    }
+    .paginas{  
+        display:grid;
+        grid-template-columns: 300px;
+        row-gap: 15px;
+
+    }
+}
